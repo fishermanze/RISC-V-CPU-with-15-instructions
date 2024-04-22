@@ -9,11 +9,11 @@
 ### slt -----rd<-(rs1)+(imm)
 ### sltu -----rd<-(rs1)+(imm)
 ### sra -----rd<-(rs1)+(imm)
-### lb -----rd<-SExt(M[(rs1)+SExt(imm)]~8b~  )
-### lw -----rd<-M[(rs1)+SExt(imm)]~32b~
-### sw -----M[(rs1)+SExt(imm)]~32b~<-(rs2)
+### lb -----rd<-SExt(M[(rs1)+SExt(imm)]<sub>8b</sub>  )
+### lw -----rd<-M[(rs1)+SExt(imm)]<sub>32b</sub>
+### sw -----M[(rs1)+SExt(imm)]<sub>32b</sub><-(rs2)
 ### beq -----if((rs1)==(rs2))PC<-(PC)+SExt(imm<<1)
-### blt -----if((rs1)<~unsigned~(rs2))PC<-(PC)+SExt(imm<<1)
+### blt -----if((rs1)<<sub>unsigned</sub>(rs2))PC<-(PC)+SExt(imm<<1)
 ### jal -----rd<-(PC)+4;PC<-(PC)+SExt(imm<<1)
 
 ## You may find the quartus project in the file "CPU"
